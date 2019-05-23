@@ -11,7 +11,9 @@
 * [Deploy](#deploy)  
 
 ## <a name="summary" />Summary
-This plugin allows you to accept video channel tasks in Flex. Its a demo only plugin and not yet ready for production code, but could be a starting place.
+This plugin allows you to accept video channel tasks in Flex. Its a demo only plugin and not yet ready for production code, but could be a starting place. To see an example implementation for the client side (allowing a customer to initiate a video chat from your website), review the repo here:
+
+[https://github.com/trogers-twilio/site-video-chat-client](https://github.com/trogers-twilio/site-video-chat-client)
 
 ## <a name="api_keys" />API Keys
 In order to generate a token capable of creating or joining a video room, it's necessary to use an API Key. If you don't already have an API Key created, or you would like to create a dedicated key for this use case, in the Twilio Console navigate to Runtime -> API Keys. Create a new key and note the SID and Secret. These will be used later when setting up our Twilio Functions.
