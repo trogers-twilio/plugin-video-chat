@@ -17,7 +17,7 @@ This plugin allows you to accept video channel tasks in Flex. Its a demo only pl
 In order to generate a token capable of creating or joining a video room, it's necessary to use an API Key. If you don't already have an API Key created, or you would like to create a dedicated key for this use case, in the Twilio Console navigate to Runtime -> API Keys. Create a new key and note the SID and Secret. These will be used later when setting up our Twilio Functions.
 
 ## <a name="twilio_functions" />Twilio Functions
-Currently it requires two hosted functions, which are stored in `src/functions`. These two functions have comments at the top that describe the environment variables they need. Please deploy them into your environment and set the variables before trying to use the plugin.
+Currently it requires several hosted functions, which are stored in `src/functions`. These functions have comments at the top that describe the environment variables they need. Please deploy them into your environment and set the variables before trying to use the plugin.
 
 Once you've recieved your domain for your hosted functions, please add it to `public/appConfig.js`.
 
