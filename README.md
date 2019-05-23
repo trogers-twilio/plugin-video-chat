@@ -31,6 +31,8 @@ The following environment variables are used by either the token generating func
   * The SID of the API Key you want to use for generating tokens
 * TWILIO_API_KEY_SECRET
   * The secret for the API Key
+* TWILIO_SYNC_SERVICE_SID
+  * The SID of the Sync Service to use when creating a Sync Doc
 * TWILIO_WORKSPACE_SID
   * The SID of the TaskRouter workspace to use for routing video interactions
 * TWILIO_VIDEO_WORKFLOW_SID
