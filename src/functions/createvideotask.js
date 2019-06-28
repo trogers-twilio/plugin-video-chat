@@ -45,7 +45,7 @@ exports.handler = function(context, event, callback) {
   const workspace = context.TWILIO_WORKSPACE_SID;
   const workflow = context.TWILIO_VIDEO_WORKFLOW_SID;
   const syncService = context.TWILIO_SYNC_SERVICE_SID;
-  const roomName = event.roomName;
+  const { roomName, customerName } = event;
 
   let client = context.getTwilioClient();
 
@@ -56,6 +56,7 @@ exports.handler = function(context, event, callback) {
   response.appendHeader('Access-Control-Allow-Headers', 'Content-Type');
 
   createTask(client, workspace, workflow, {
+    name: customerName,
     url: context.DOMAIN_NAME,
     flexWorker: decodeURI(event.worker),
     phoneNumber: event.phoneNumber,
